@@ -1,0 +1,11 @@
+{
+  "export_on_start": true,
+  "submodule": "compiled",
+  "target_functions": [
+    {
+      "module": "my_package.utils",
+      "function_name": "is_prime",
+      "signature": "i4(i4)"
+    }
+  ]
+}
