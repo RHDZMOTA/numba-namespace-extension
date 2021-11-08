@@ -7,8 +7,9 @@ with open("README.md", "r") as file:
 setup(
     name="numba_namespace_extension",
     version="0.1.0",
-    long_description=readme,
     description="Easily create compiled namespace Numba extensions.",
+    long_description_content_type="text/markdown",
+    long_description=readme,
     packages=find_namespace_packages(where="src"),
     package_dir={
         "": "src"
