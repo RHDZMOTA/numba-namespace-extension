@@ -1,0 +1,7 @@
+{
+  "project_name": "My Package Compiled",
+  "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
+  "project_namespace": "my_package",
+  "project_compiled_submodule": "compiled",
+  "version": "0.1.0"
+}
