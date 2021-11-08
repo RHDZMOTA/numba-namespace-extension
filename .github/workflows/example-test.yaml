@@ -1,0 +1,25 @@
+name: Example Test
+
+on: [pull_request]
+
+jobs:
+  build:
+    name: Example Test
+    runs-on: ubuntu-18.04
+    steps:
+      - name: clone-repo
+        uses: actions/checkout@v1
+        with:
+          submodules: true
+      - name: install-python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.7.5'
+      - name: install-librariy
+        run: python -m pip install -e .
+      - name: install-example-my-package
+        run: python -m pip install -e example/my_package
+      - name: install-example-my-package-compiled
+        run: python -m pip install -e example/my_package_compiled
+      - name: testing-my-package-compiled
+        run: python -c "from my_package.compiled.utils import is_prime; print(is_prime(7))"
