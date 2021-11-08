@@ -13,9 +13,7 @@ setup(
     package_dir={
         "": "src"
     },
-    setup_requires=[
-        "cython",
+    install_requires=[
         "numba>=0.54.1, <1.0.0",
-        "numpy>=1.20.3, <2.0.0"
     ],
 )
