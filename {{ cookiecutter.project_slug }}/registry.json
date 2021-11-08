@@ -1,0 +1,11 @@
+{
+  "export_on_start": true,
+  "submodule": "compiled",
+  "target_functions": [
+    {
+      "module": "<Replace with module>",
+      "function_name": "<Replace with function name>",
+      "signature": "<Replace with type signature>"
+    }
+  ]
+}
